@@ -1,6 +1,6 @@
-# StockManager – Pakete
+# Haushaltsnest – Pakete
 
-Hier liegen die fertigen Android-Pakete von **StockManager**, einer privaten App zur
+Hier liegen die fertigen Android-Pakete von **Haushaltsnest**, einer privaten App zur
 Haushaltsverwaltung. Dieses Repository enthält **keinen Quellcode** – nur das, was
 installiert wird.
 
