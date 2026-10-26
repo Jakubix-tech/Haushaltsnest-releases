@@ -1,0 +1,117 @@
+/*
+    Eine Datei, keine Abhängigkeiten.
+
+    Eine Datenschutzerklärung, die beim Aufruf eine Schriftart von einem fremden Server
+    nachlädt, überträgt die IP-Adresse des Lesers an diesen Server – und widerspricht
+    damit genau dem, was auf ihr steht. Deshalb: nur Systemschriften, keine Einbindung
+    von außen, kein Skript.
+*/
+
+:root {
+    --grund: #ffffff;
+    --schrift: #1b1f1d;
+    --leise: #5b6661;
+    --akzent: #2e7d5b;
+    --rand: #e2e8e5;
+    --merk: #fff4e0;
+    --merkrand: #e0a33c;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --grund: #141816;
+        --schrift: #e8ece9;
+        --leise: #9aa6a0;
+        --akzent: #6cc79b;
+        --rand: #2a302d;
+        --merk: #33280f;
+        --merkrand: #a87d26;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 1rem 5rem;
+    background: var(--grund);
+    color: var(--schrift);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+main {
+    max-width: 44rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    margin: 0 0 0.25rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin: 2.5rem 0 0.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rand);
+}
+
+h3 {
+    font-size: 1.05rem;
+    margin: 1.5rem 0 0.4rem;
+}
+
+p,
+ul,
+ol {
+    margin: 0.6rem 0;
+}
+
+li {
+    margin: 0.3rem 0;
+}
+
+a {
+    color: var(--akzent);
+}
+
+code {
+    font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+    font-size: 0.9em;
+    background: var(--rand);
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+}
+
+.stand {
+    color: var(--leise);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.sprachen {
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+/* Was im Text wirklich wichtig ist – sparsam verwenden. */
+.merk {
+    background: var(--merk);
+    border-left: 4px solid var(--merkrand);
+    padding: 0.8rem 1rem;
+    margin: 1.2rem 0;
+    border-radius: 0 6px 6px 0;
+}
+
+footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rand);
+    color: var(--leise);
+    font-size: 0.9rem;
+}
